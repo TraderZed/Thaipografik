@@ -87,9 +87,13 @@ header {
 	padding: 25px 0;
 }
 
+	header img {
+		display: block;
+		width: 53px;
+		margin: 0 auto 20px auto;
+	}
+
 	header h1 {
-		background: url(../images/backgrounds/triangle.png) center 0 no-repeat;
-		padding: 60px 0 0 0;
 		font-size: 12px;
 		font-style: normal;
 		font-family: 'Helvetica Neue Bold';
