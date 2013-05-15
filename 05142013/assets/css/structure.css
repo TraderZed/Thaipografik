@@ -1,0 +1,421 @@
+/********************************************************************
+
+	THAIPOGRAFIK - structure.css
+	-----------------------------
+	author: zack ginies - zack@zackginies.com
+	date: sept 24, 2012 
+	 
+	INDEX
+	-----------------------------------------
+	- Body 
+	- Header
+		- Main Nav
+		
+	- Selected Work
+	- Fonts
+	- Typography
+	- Links
+	- Lists
+	- Buttons
+
+********************************************************************/
+
+/* BODY ---------------------------------------------------------*/
+
+body {
+	background: #f6f6f6 url(../images/backgrounds/footer.gif) 0 bottom repeat-x;
+	padding: 30px 0 0 0;
+	font-size: 17px;
+	font-style: italic;
+	color: #32032d;
+/* 	overflow-x: hidden; */
+}
+
+/* HEADER ---------------------------------------------------------*/
+
+header {
+	position: fixed;
+	width: 1360px;
+	height: 170px;
+	left: 50%;
+	margin: 0 0 0 -680px;
+	z-index: 10;
+}
+
+	header h1 {
+		background: url(../images/backgrounds/triangle.png) center 0 no-repeat;
+		padding: 60px 0 0 0;
+		font-style: normal;
+		font-family: 'Helvetica Neue Bold';
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+
+/* Main Nav */
+
+header nav {
+	float: right;
+	margin: -20px 145px 0 0;
+	text-align: center;
+}
+
+	header nav ul li {
+		margin: 0 0 25px 0;
+		letter-spacing: 1px;
+	}
+
+		header nav ul li a {
+			color: #32032d;
+		}
+		
+			header nav ul li.active a {
+				text-decoration: line-through;
+				color: #dc3463;
+			}
+			
+				header nav ul li.active sup {
+					text-decoration: none;
+				}
+
+
+.btn_avail {
+	display: block;
+	background: url(../images/backgrounds/freelance_dirty.png) 0 0 no-repeat;
+	height: 450px;
+	width: 450px;
+	margin: 150px auto 0 auto;
+	text-indent: -99999px;
+}
+
+
+
+/* SELECTED WORK ---------------------------------------------------------*/
+
+#selected_work {
+	margin: 130px auto 0 auto;
+	overflow-x: hidden;
+}
+
+	#selected_work h2 {
+		margin: 0 0 30px 0;
+		font-size: 34px;
+		font-style: normal;
+		font-family: 'Helvetica Neue Bold';
+		letter-spacing: 10px;
+		line-height: 55px;
+		text-transform: uppercase;
+	}
+	
+	#selected_work p {
+		padding: 0 0 20px 0;
+		letter-spacing: 1px;
+		line-height: 28px;
+	}
+
+	#selected_work article {
+		position: relative;
+		height: 765px;
+		margin: 0 0 40px 0;
+	}
+	
+		#selected_work article .work_desc {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin: 0 0 0 -625px;
+			width: 230px;
+			text-align: center;
+			z-index: 10;
+		}
+		
+		#selected_work article .skills {
+			padding: 50px 0 0 0;
+			font-size: 14px;
+			font-style: normal;
+			font-family: 'Helvetica Neue Condensed';
+			line-height: 28px;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+			border-top: 1px solid #000;
+		}
+		
+		
+		#selected_work article .screens_wrapper {
+			position: relative;
+			left: 50%;
+			margin: 0 0 0 -480px;
+			height: 100%;
+			width: 959px;
+			cursor: pointer;
+			overflow: hidden;
+		}
+		
+			#selected_work article#toysrus .screens_wrapper {
+				cursor: default;
+			}
+		
+			#selected_work article .screens_wrapper.minty {
+				background: #dce8db;
+			}
+			
+			#selected_work article .screens_wrapper.peachy {
+				background: #fce7d6;
+			}
+			
+			#selected_work article .screens_wrapper.freezy {
+				background: #cfe7e3;
+			}
+			
+			#selected_work article .screens_wrapper.cloudy {
+				background: #e7e7e9;
+			}
+			
+			#selected_work article .screens_wrapper.buttery {
+				background: #fffbde;
+			}
+			
+			#selected_work article .screens_wrapper.icy {
+				background: #c7ebf2;
+			}
+			
+			#selected_work article .work_screens {
+				position: relative;
+				padding: 0 0 0 0;
+				margin: 0 0 0 115px;
+				overflow: visible !important;
+			}
+				
+				#selected_work article .work_screens li {
+					float: left;
+					padding: 0 0 0 0;
+					margin: 0 0 0 0;
+					width: 959px;
+					text-align: center;
+				}
+			
+			#selected_work article .jcarousel-container-horizontal {
+				padding: 0 0 0 0;
+				margin: 0 0 0 0;
+			}
+			
+			.jcarousel-clip {
+				width: 959px;
+				height: 765px;
+				margin: 0 auto;
+			}
+			
+			#selected_work .btn_next {
+				position: absolute;
+				right: 0;
+				top: 0;
+				display: block;
+				height: 100%;
+				width: 50%;
+				text-indent: -99999px;
+			}
+			
+			#selected_work .btn_prev {
+				position: absolute;
+				left: 0;
+				top: 0;
+				display: block;
+				height: 100%;
+				width: 50%;
+				text-indent: -99999px;
+			}
+		
+
+
+/* FOOTER ------------------------------------------------------*/
+
+footer {
+	height: 1688px;
+	width: 1205px;
+	margin: 250px auto 0 auto;
+	padding: 0 50px;
+	overflow: hidden;
+}
+
+	footer h2 {
+		margin: 0 0 30px 0;
+		padding: 20px 0 0 0;
+		font-size: 34px;
+		font-style: normal;
+		font-family: 'Helvetica Neue Bold';
+		letter-spacing: 10px;
+		text-transform: uppercase;
+	}
+
+	footer h3 {
+		position: relative;
+		top: -70px;
+		background: url(../images/backgrounds/thanks.png) 0 0 no-repeat;
+		height: 251px;
+		width: 669px;
+		margin: 0 auto;
+		text-indent: -99999px;
+		clear: both;
+	}
+	
+	footer h4 {
+		margin: 0 0 10px 0;
+		font-size: 14px;
+		font-style: normal;
+		font-family: 'Helvetica Neue Condensed';
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		
+	}
+	
+	footer p {
+		margin: 0 0 40px 0;
+		letter-spacing: 0.75px;
+	    line-height: 28px;
+	}
+	
+	footer a {
+		color: #32032d;
+	}
+	
+	footer ul {
+		margin: 0 0 40px 0;
+	}
+	
+		footer ul li {
+			margin: 0 0 5px 0;
+			line-height: 28px;
+		}
+
+	
+	footer section {
+		float: left;
+		height: 1127px;
+		width: 240px;
+		text-align: center;
+	}
+	
+	footer #clients {
+		background: url(../images/backgrounds/bheb.jpg) center bottom no-repeat;
+		margin: 0 242px;
+	}
+	
+	footer #awards a {
+		display: block;
+		height: 193px;
+		width: 193px;
+		margin: 0 auto 30px auto;
+		text-indent: -99999px;
+	}
+	
+		footer #awards #btn_email {
+			background: url(../images/buttons/email.png) 0 0 no-repeat;
+		}
+		
+		footer #awards #btn_download {
+			background: url(../images/buttons/download_cv.png) 0 0 no-repeat;
+		}
+	
+		
+/* MEDIA QUERIES -------------------------------------------------*/
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+/* Styles */
+	
+	header {
+		position: absolute !important;
+		left: 0;
+		margin: 0;
+	}
+	
+	.btn_avail {
+		background-position: center 0;
+		width: 1360px;
+	}
+
+	
+	#selected_work {
+		width: 1360px !important;
+	}
+	
+	#selected_work article {
+		width: 1360px;
+		height: 770px;
+	}
+	
+	#selected_work article .work_desc {
+		left: 35px !important;
+		margin-left: 0 !important;
+	}
+
+	#selected_work article .screens_wrapper {
+		position: relative;
+		left: 0 !important;
+		margin: 0 0 0 0 !important;
+		height: 100%;
+		width: 100% !important;
+		cursor: pointer;
+		overflow-y: hidden !important;
+		overflow-x: scroll !important;
+	}
+
+	#selected_work .btn_next,
+	#selected_work .btn_prev {
+		display: none;
+	}
+	
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+/* Styles */
+	
+	header {
+		position: absolute !important;
+		left: 0;
+		margin: 0;
+	}
+	
+	.btn_avail {
+		background-position: center 0;
+		width: 1360px;
+	}
+	
+	#selected_work {
+		width: 1360px !important;
+	}
+	
+	#selected_work article {
+		width: 1360px;
+		height: 770px;
+	}
+	
+	#selected_work article .work_desc {
+		left: 35px !important;
+		margin-left: 0 !important;
+	}
+
+	#selected_work article .screens_wrapper {
+		position: relative;
+		left: 0 !important;
+		margin: 0 0 0 0 !important;
+		height: 100%;
+		width: 100% !important;
+		cursor: pointer;
+		overflow-y: hidden !important;
+		overflow-x: scroll !important;
+	}
+
+	#selected_work .btn_next,
+	#selected_work .btn_prev {
+		display: none;
+	}
+	
+}
