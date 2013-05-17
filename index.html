@@ -27,8 +27,10 @@
 	        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
 	    );
 	}
-
-	if(!getURLParameter('ref')) {
+	
+	console.log(getURLParameter('ref'));
+	
+	if(getURLParameter('ref') == 'null') {
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
 			window.location.replace("http://thaipografik.com/mobile");
 		}

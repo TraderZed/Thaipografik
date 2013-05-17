@@ -123,6 +123,9 @@ p {
 }
 
 	.btn a {
+		display: block;
+		height: 100%;
+		width: 100%;
 		text-decoration: none;
 		color: #f1eedb;
 	}
